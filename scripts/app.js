@@ -1,12 +1,19 @@
 /* Function to make the square in the media section responsive */
 function adjustSquareHeight() {
-  const myHeight = $('section.media').height()
-  const myString = (myHeight * 1.1) + 'px'
+  let myHeight = $('section.media').height()
+  if (myHeight < 1300) {
+    myHeight *= 1.1
+  }
+  const myString = myHeight + 'px'
   $('div.square-decoration').css('height', myString)
   $('div.square-decoration').css('width', myString)
 }
 
 $(document).ready(() => {
+  $('button.newsletter-button').click(event => {
+    event.preventDefault()
+    $('input.newsletter-input').attr('placeholder', 'Subscribed')
+  })
   adjustSquareHeight()
 })
 
