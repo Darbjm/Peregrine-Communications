@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap");
+
+/* green = #005D44 */
+/* yellow = #F8EE9A */
+
+p,
+a {
+  font-family: Work Sans, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Cardo, serif;
+  font-weight: 400;
+}
+
+.about {
+  background-image: url(../assets/moutain-smoke.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: rgba(0, 93, 68);
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: space-between;
+}
+
+.about-section-right {
+  width: 400px;
+}
+
+article {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.articles-container {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.article-image {
+  width: 350px;
+}
+
+.diamond {
+  visibility: hidden;
+  width: 8px;
+  height: 8px;
+  transform: rotateY(0deg) rotate(45deg);
+  background-color: #f8ee9a;
+  left: 44%;
+  bottom: 27px;
+  position: absolute;
+  z-index: 1;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px #f8ee9a;
+  padding: 10px 80px 30px 80px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 93, 68, 1) 40%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(../assets/pukpik-386267.png);
+  background-position: center;
+  height: 60vh;
+  padding: 20px 80px;
+}
+
+.footer-title {
+  color: white;
+}
+
+.footer-top {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 95%;
+}
+
+.grid {
+  display: flex;
+  flex-grow: 2;
+  width: 70%;
+}
+
+.grid-image {
+  margin-right: 25px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 40px 40px 0;
+}
+
+.grid-item-text {
+  font-size: 20px;
+  font-family: Cardo, serif;
+  color: #484848;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #f8ee9a;
+}
+
+h3 {
+  color: #484848;
+}
+
+/* Styling for header */
+header {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 93, 68, 1) 0%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url(../assets/harman-abiwardani-1583.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container {
+  display: flex;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.logo-container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  padding-top: 30px;
+}
+
+.navbar {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  cursor: pointer;
+  margin: 10px 0;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #f8ee9a;
+  text-decoration: none;
+}
+
+.nav-link:hover .diamond {
+  visibility: visible;
+}
+
+.nav-contianer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
+}
+
+.newsletter-button {
+  width: 50%;
+}
+
+.newsletter-input {
+  padding-left: 20px;
+  width: 50%;
+  border: none;
+  border-radius: 0;
+  height: 42px;
+  margin: 0;
+}
+
+.medium-text {
+  font-size: 18px;
+}
+
+.media {
+  margin-top: 0px;
+  background-color: #005d44;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  z-index: 0;
+  height: 1000px;
+}
+
+.media-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.overview {
+  background-image: url("../assets/geo-station-mockup.png");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.overview-text {
+  width: 50%;
+}
+
+.primary-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #f8ee9a;
+  font-family: Work Sans, sans-serif;
+  padding: 10px 20px;
+  color: white;
+}
+
+.scroll-button {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 45%;
+  padding-bottom: 20px;
+}
+
+section {
+  padding: 80px;
+}
+
+.secondary-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #00b3ae;
+  font-family: Work Sans, sans-serif;
+  padding: 10px 20px;
+}
+
+.social-media {
+  display: flex;
+  width: 33.33%;
+  flex-direction: column;
+}
+
+.social-media-top {
+  display: flex;
+  flex-grow: 1;
+  padding-top: 30px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.social-media-bottom {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.social-media-image {
+  margin-left: 20px;
+}
+
+.square-decoration {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border-width: 1px;
+  border-color: #00b3ae;
+  border-style: solid;
+  z-index: -1;
+}
+
+.terms-conditions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 33.33%;
+}
+
+.terms-conditions-text {
+  color: #92cec0;
+}
+
+.text-green {
+  color: #005d44;
+}
+
+.text-grey {
+  color: #484848;
+}
+
+.text-white {
+  color: white;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.title {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 55%;
+}
