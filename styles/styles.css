@@ -258,6 +258,10 @@ form {
   text-align: center;
 }
 
+.nav-link {
+  color: white;
+}
+
 a.nav-link {
   cursor: pointer;
   margin: 10px 0;
@@ -266,8 +270,8 @@ a.nav-link {
   padding-left: 0 !important;
 }
 
-a.nav-link:hover {
-  color: #f8ee9a !important;
+.nav-link:hover {
+  color: #f8ee9a;
   text-decoration: none;
 }
 
@@ -420,10 +424,6 @@ section {
   padding-bottom: 20px;
 }
 
-.scrolled {
-  background-color: #e6efec;
-}
-
 .secondary-button {
   background-color: rgba(255, 255, 255, 0);
   border: solid 1px #00b3ae;
@@ -465,6 +465,10 @@ section {
   border-color: #00b3ae;
   border-style: solid;
   z-index: -1;
+}
+
+.svg-logo {
+  margin-bottom: 10px;
 }
 
 .terms-conditions {
