@@ -14,22 +14,28 @@
 </head>
 <body>
     <header class="header"> <!-- Start of header -->
-        <nav class="navbar navbar-expand-md fixed-top">
-            <div class="container">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark container">
+            <div class="nav-container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="row first-nav-row">
-                <div class="navbar-brand ">
-                <img class="logo" src="assets/LOGO.png" alt="company logo"/>
-                <p class="logo-text">Name of the company lorem ipsum</p>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                </div>
+            <div class="row first-nav-row no-gutters">
+                <div class="col no-gutters">
+                  </div>
+                  <div class="col-8 no-gutters">
+                    <div>
+                        <img class="logo" src="assets/LOGO.png" alt="company logo"/>
+                        <p class="logo-text">Name of the company lorem ipsum</p>
+                    </div>
+                  </div>
+                  <div class="col no-gutters burger-column">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBurger" aria-controls="navbarBurger" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-burger"></span> 
+                        <span class="navbar-burger"></span> 
+                        <span class="navbar-burger"></span>
+                    </button>
+                  </div>
             </div>
-            <div class="row" id="navbarSupportedContent">
-                <div class="nav-contianer justify-content-center collapse navbar-collapse">
+            <div class="row no-gutters collapse navbar-collapse nav-menu-container" id="navbarBurger">
+                <div class="nav-border">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#" target="_blank">
@@ -91,7 +97,7 @@
                 <br/>
                 <p class="thin medium-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <br/>
-                <button class="primary-button"><img src='assets/arrow-yellow.svg' alt="yellow arrow"/> THE OPPORTUNITY</button>
+                <button class="primary-button" type="button"><img src='assets/arrow-yellow.svg' alt="yellow arrow"/> THE OPPORTUNITY</button>
             </div>
         </section> <!-- End of about -->
         <section class="overview"> <!-- Start of overview -->
@@ -121,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <button class="secondary-button grey"><img src='assets/arrow-green.svg' alt="green arrow"/> THE STRATEGY</button>
+            <button class="secondary-button grey" type="button"><img src='assets/arrow-green.svg' alt="green arrow"/> THE STRATEGY</button>
         </section> <!-- End of overview -->
         <section class="media"> <!-- Start of media -->
             <div class="square-decoration"></div>
@@ -185,7 +191,7 @@
                     </a>
                 </article>
             </div>
-            <button class="primary-button"><img src='assets/arrow-yellow.svg'  alt="yellow arrow"/> VIEW MORE</button>
+            <button class="primary-button" type="button"><img src='assets/arrow-yellow.svg'  alt="yellow arrow"/> VIEW MORE</button>
         </section> <!-- End of media -->
         <footer class="footer"> <!-- Start of footer-->
             <div class="footer-top">
@@ -199,10 +205,10 @@
             </div>
             <div class="footer-bottom">
                 <div class="terms-conditions">
-                    <a href="#" target=”_blank”>
+                    <a href="#" target=”_blank” class="terms-conditions-link">
                         <p class="terms-conditions-text">Terms & Conditions</p>
                     </a>
-                    <a href="#" target=”_blank”>
+                    <a href="#" target=”_blank” class="terms-conditions-link">
                         <p class="terms-conditions-text">Disclaimer</p>
                     </a>
                 </div>

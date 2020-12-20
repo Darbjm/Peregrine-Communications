@@ -19,6 +19,10 @@ h3 {
   font-weight: 400;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .about {
   background-image: url(../assets/moutain-smoke.png);
   background-size: contain;
@@ -107,8 +111,14 @@ article {
   flex-direction: row;
 }
 
-.container {
-  flex-direction: column;
+.burger-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+nav.container {
+  max-width: 100%;
 }
 
 .diamond {
@@ -128,12 +138,13 @@ article {
   flex-direction: column;
   align-items: center;
   border: solid 1px #f8ee9a;
-  padding: 30px 80px 30px 80px;
+  padding: 30px 40px 30px 40px;
 }
 
 .first-nav-row {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .footer {
@@ -146,8 +157,7 @@ article {
     ),
     url(../assets/pukpik-386267.png);
   background-position: center;
-  height: 60vh;
-  padding: 20px 80px;
+  padding: 20px 4%;
 }
 
 .footer-title {
@@ -156,17 +166,17 @@ article {
 
 .footer-top {
   display: flex;
-  flex-grow: 1;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 40px 0;
 }
 
 .footer-bottom {
   display: flex;
-  flex-grow: 1;
   flex-direction: row;
   justify-content: space-between;
+  height: 250px;
 }
 
 form {
@@ -213,6 +223,7 @@ form {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 4%;
 }
 
 .header-container {
@@ -247,15 +258,6 @@ form {
   text-align: center;
 }
 
-.navbar {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
-
 a.nav-link {
   cursor: pointer;
   margin: 10px 0;
@@ -273,10 +275,45 @@ a.nav-link:hover {
   visibility: visible;
 }
 
-.nav-contianer {
-  width: 90%;
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 4% 0 4%;
+}
+
+.nav-border {
+  width: 100%;
   border-top: white solid 1px;
   border-bottom: white solid 1px;
+}
+
+.nav-menu-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav.navbar {
+  text-align: center;
+  padding: 0;
+}
+
+.navbar-burger {
+  width: 100%;
+  border-top: 2px solid #f8ee9a;
+}
+
+.navbar-burger:nth-of-type(2) {
+  border: 2px solid #f8ee9a;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
 }
 
 ul.navbar-nav {
@@ -285,6 +322,34 @@ ul.navbar-nav {
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+button.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-width: 40px;
+  min-height: 30px;
+  padding: 2px;
+  border: none;
+}
+
+button.navbar-toggler:before,
+button.navbar-toggler:after {
+  position: absolute;
+  top: 14px;
+  left: 2px;
+  overflow: hidden;
+  width: 13px;
+  height: 2px;
+  content: "\a0";
+  background-color: #f8ee9a;
+}
+
+button.navbar-toggler:after {
+  left: 25px;
 }
 
 .newsletter-button {
@@ -343,6 +408,10 @@ section.media {
   color: white;
 }
 
+section {
+  padding: 4%;
+}
+
 .scroll-button {
   display: flex;
   flex-direction: column-reverse;
@@ -351,8 +420,8 @@ section.media {
   padding-bottom: 20px;
 }
 
-section {
-  padding: 80px;
+.scrolled {
+  background-color: #e6efec;
 }
 
 .secondary-button {
@@ -410,6 +479,10 @@ section {
   color: #92cec0;
 }
 
+.terms-conditions-link:hover {
+  text-decoration: none;
+}
+
 .text-green {
   color: #005d44;
 }
@@ -434,8 +507,4 @@ section {
   display: flex;
   flex-direction: column-reverse;
   height: 55%;
-}
-
-.row {
-  width: 100%;
 }
