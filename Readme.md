@@ -3,7 +3,6 @@
 <h1>Peregrine Communications</h1>
 <h2>Task: Build responsive website.</h2>
 <br/>
-<br/>
 <h2>Deployment</h2>
 <br/>
 The website is currently hosted on github pages at:
