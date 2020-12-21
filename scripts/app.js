@@ -61,7 +61,7 @@ $(document).ready(() => {
         $('a.nav-link').toggleClass('upper')
         $('.menu-title').toggleClass('display-block')
         $('.nav-footer').toggleClass('display-flex')
-        // $('nav.navbar').toggleClass('max-height')
+        $('nav.navbar').toggleClass('max-height')
     })
 
     /* Change navbar button on click */

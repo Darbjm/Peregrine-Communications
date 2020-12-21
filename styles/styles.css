@@ -430,7 +430,6 @@ nav.navbar {
   display: flex;
   align-content: space-between;
   background-color: #005d44d0 !important;
-  max-height: 100vh !important;
 }
 
 ul.navbar-nav {
