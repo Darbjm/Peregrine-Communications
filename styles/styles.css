@@ -428,7 +428,6 @@ nav.navbar {
 
 .navbar-expanded {
   display: flex;
-  align-content: space-between;
   background-color: #005d44d0 !important;
 }
 
