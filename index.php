@@ -1,3 +1,30 @@
+<?php
+
+    echo "<pre>";
+        print_r($_POST);
+    echo "</pre>";
+
+    // $message_sent = false;
+    //     // Submit email
+    //     if (isset($_POST['submit']) && $_POST['email'] != '') {
+    //         $message_sent = true;
+
+
+    //         // Check the email is valid
+    //         // if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+
+    //         //     $email = $_POST['email'];
+
+    //         //     $mailTo = "ownersemail@gmail.com";
+    //         //     $subject = "From my website";
+    //         //     $body = "New subscriber: ".$email.
+        
+    //         //     // mail($mailTo, $subject, $body);
+    //         //     // header("Location: index.php?mailsend");
+    //         // }
+    //     }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -270,8 +297,19 @@
                 <div class="email-container">
                     <h2 class="footer-title">Lorem ipsum dolor sit amet, consectetur.</h2>
                     <form class="form" method="POST" action="index.php">
+                    <?php
+                        if($message_sent):
+                    ?>
+                        <input class="newsletter-input" name="send-email" placeholder="Thanks we'll be in touch!">
+                        <button class="primary-button newsletter-button" type="submit"><img src='assets/arrow-yellow.svg'  alt="yellow arrow"/> SUBSCRIBE NEWSLETTER</button>
+                    <?php
+                        else:
+                    ?>
                         <input class="newsletter-input" name="email" placeholder="Insert your email...">
                         <button class="primary-button newsletter-button" type="submit"><img src='assets/arrow-yellow.svg'  alt="yellow arrow"/> SUBSCRIBE NEWSLETTER</button>
+                    <?php
+                        endif;
+                    ?>
                     </form>
                 </div>
             </div>
