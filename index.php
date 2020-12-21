@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header"> <!-- Start of header -->
-        <nav class="navbar navbar-expand-md fixed-top container">
+        <nav class="navbar navbar-expand-md fixed-top container"> <!-- Start of nav -->
             <div class="nav-container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="row first-nav-row no-gutters">
@@ -29,14 +29,15 @@
                     </div>
                   </div>
                   <div class="col no-gutters burger-column">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBurger" aria-controls="navbarBurger" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-burger"></span> 
-                        <span class="navbar-burger"></span> 
-                        <span class="navbar-burger"></span>
+                    <button class="navbar-toggler navbar-toggler-unclicked" type="button" data-toggle="collapse" data-target="#navbarBurger" aria-controls="navbarBurger" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-burger 1"></span> 
+                        <span class="navbar-burger 2"></span> 
+                        <span class="navbar-burger 3"></span>
                     </button>
                   </div>
             </div>
             <div class="row no-gutters collapse navbar-collapse nav-menu-container" id="navbarBurger">
+                <h3 class="menu-title">Menu</h3>
                 <div class="nav-border">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -79,7 +80,31 @@
                 </div>
             </div>
             </div>
-        </nav>
+            <div class="nav-footer">
+                <div>
+                    <a href="#" target=”_blank”>
+                        <img src="assets/LINKEDIN.svg" alt="Linkedin logo">
+                    </a>
+                    <a href="#" target=”_blank”>
+                        <img class="social-media-image" src="assets/TWITTER.svg" alt="Twitter logo">
+                    </a>
+                    <a href="#" target=”_blank”>
+                        <img class="social-media-image" src="assets/FACEBOOK.svg" alt="Facebook logo">
+                    </a>
+                </div>
+                <div class="nav-footer-tscs">
+                    <a href="#" target=”_blank” class="terms-conditions-link">
+                        <p class="terms-conditions-text">Terms & Conditions</p>
+                    </a>
+                    <a href="#" target=”_blank” class="terms-conditions-link">
+                        <p class="terms-conditions-text">Disclaimer</p>
+                    </a>
+                </div>
+                <div>
+                    <p>Copyright © 2018 – All rights reserved.</p>
+                </div>
+            </div>
+        </nav> <!-- End of nav -->
         <div class="header-container">
             <div class="title">
                 <h1 class="text-white">Lorem ipsum dolor sit amet, consectetur.</h1>
@@ -108,7 +133,7 @@
                 <p class="medium-text text-grey">Lorem ipsum dolor adispcim magna consectur et dolorem, ergos nimbuperspiciatis unde omnis iste natus error sit voluptatem:</p>
             </div>
             <div class="grid">
-                <div>
+                <div class="grid-container">
                     <div class="grid-item">
                         <img class="grid-image" src="assets/item-one.png" alt="grid image one"/>
                         <p class="grid-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -118,7 +143,7 @@
                         <p class="grid-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </div>
                 </div>
-                <div>
+                <div class="grid-container">
                     <div class="grid-item">
                         <img class="grid-image" src="assets/item-three.png" alt="grid image three"/>
                         <p class="grid-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -138,14 +163,25 @@
                 <p class="text-white">Lorem ipsum dolor sit amet, consectetur.</p>
             </div>
             <div class="articles-container">
-                <article>
+                <article class="article">
                     <a class="article-link" href="#" target="_blank">
                         <div class="article-card-top">
                             <img class="article-image" src="assets/article-one.png" alt="hot geyser">
                         </div>
                         <div class="article-card-bottom">
+                            <div class="article-svg">
+                                <svg class="doc-svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="doc-icon-rect" x="1.42293" y="29" width="39" height="39" transform="rotate(-45 1.42293 29)" fill="white" stroke="#008C88"/>
+                                    <path class="doc-icon-stroke" fill-rule="evenodd" clip-rule="evenodd" d="M37.034 39.9015H21.5V18.5005H32.286L37.034 23.2475V39.9015Z" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M37.0339 23.2477H32.2859V18.4997" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 27.0817H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 30.0314H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 32.9816H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 35.9313H34.855" stroke="#00563B"/>
+                                </svg>
+                            </div>
                             <div class="article-title">
-                                <h3 class="text-grey">Lorem ipsum dolor sit amet consectur adipiscim</h3>
+                                <h3 class="text-grey article-title-text">Lorem ipsum dolor sit amet consectur adipiscim</h3>
                             </div>
                             <div>
                                 <p class="text-green article-date">Dec 21</p>
@@ -153,17 +189,32 @@
                             <div class="article-text">
                                 <p class="text-grey">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test divide with clickthroughs from… </p>
                             </div>
+                            <div class="read-more-div">
+                                <img src='assets/arrow-turq.svg' alt="turquoise arrow"/>
+                                <p class="read-more">READ MORE</p>
+                            </div>
                         </div>
                     </a>
                 </article>
-                <article>
+                <article class="article">
                     <a class="article-link" href="#" target="_blank">
                         <div class="article-card-top">
                             <img class="article-image" src="assets/article-two.png" alt="hut with smoke">
                         </div>
                         <div class="article-card-bottom">
+                            <div class="article-svg">
+                                <svg class="doc-svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="doc-icon-rect" x="1.42293" y="29" width="39" height="39" transform="rotate(-45 1.42293 29)" fill="white" stroke="#008C88"/>
+                                    <path class="doc-icon-stroke" fill-rule="evenodd" clip-rule="evenodd" d="M37.034 39.9015H21.5V18.5005H32.286L37.034 23.2475V39.9015Z" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M37.0339 23.2477H32.2859V18.4997" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 27.0817H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 30.0314H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 32.9816H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 35.9313H34.855" stroke="#00563B"/>
+                                </svg>
+                            </div>
                             <div class="article-title">
-                                <h3 class="text-grey">Lorem ipsum dolor sit amet consectur adipiscim</h3>
+                                <h3 class="text-grey article-title-text">Lorem ipsum dolor sit amet consectur adipiscim</h3>
                             </div>
                             <div>
                                 <p class="text-green article-date">Dec 21</p>
@@ -171,23 +222,42 @@
                             <div class="article-text">
                                 <p class="text-grey">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test divide with clickthroughs from… </p>
                             </div>
+                            <div class="read-more-div">
+                                <img src='assets/arrow-turq.svg' alt="turquoise arrow"/>
+                                <p class="read-more">READ MORE</p>
+                            </div>
                         </div>
                     </a>
                 </article>
-                <article>
+                <article class="article">
                     <a class="article-link" href="#" target="_blank">
                         <div class="article-card-top">
                             <img class="article-image" src="assets/article-three.png" alt="industrial pipes">
                         </div>
                         <div class="article-card-bottom">
+                            <div class="article-svg">
+                                <svg class="doc-svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="doc-icon-rect" x="1.42293" y="29" width="39" height="39" transform="rotate(-45 1.42293 29)" fill="white" stroke="#008C88"/>
+                                    <path class="doc-icon-stroke" fill-rule="evenodd" clip-rule="evenodd" d="M37.034 39.9015H21.5V18.5005H32.286L37.034 23.2475V39.9015Z" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M37.0339 23.2477H32.2859V18.4997" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 27.0817H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 30.0314H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 32.9816H34.855" stroke="#00563B"/>
+                                    <path class="doc-icon-stroke" d="M23.679 35.9313H34.855" stroke="#00563B"/>
+                                </svg>
+                            </div>
                             <div class="article-title">
-                                <h3 class="text-grey">Lorem ipsum dolor sit amet consectur adipiscim</h3>
+                                <h3 class="text-grey article-title-text">Lorem ipsum dolor sit amet consectur adipiscim</h3>
                             </div>
                             <div>
                                 <p class="text-green article-date">Dec 21</p>
                             </div>
                             <div class="article-text">
                                 <p class="text-grey">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test divide with clickthroughs from… </p>
+                            </div>
+                            <div class="read-more-div">
+                                <img src='assets/arrow-turq.svg' alt="turquoise arrow"/>
+                                <p class="read-more">READ MORE</p>
                             </div>
                         </div>
                     </a>
@@ -199,8 +269,8 @@
             <div class="footer-top">
                 <div class="email-container">
                     <h2 class="footer-title">Lorem ipsum dolor sit amet, consectetur.</h2>
-                    <form>
-                        <input class="newsletter-input" placeholder="Insert your email...">
+                    <form class="form" method="POST" action="index.php">
+                        <input class="newsletter-input" name="email" placeholder="Insert your email...">
                         <button class="primary-button newsletter-button" type="submit"><img src='assets/arrow-yellow.svg'  alt="yellow arrow"/> SUBSCRIBE NEWSLETTER</button>
                     </form>
                 </div>
