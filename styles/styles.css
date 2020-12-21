@@ -822,4 +822,12 @@ section {
   .newsletter-button {
     font-size: 10px;
   }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .terms-conditions {
+    width: 80%;
+  }
 }
