@@ -101,11 +101,11 @@ $(document).ready(() => {
 
     /* Make article images same height as test */
     function adjustArticleImages() {
-        if ($(window).width() < 768 && $(window).width() > 539) {
+        if ($(window).width() < 769 && $(window).width() > 539) {
             const articleHeight = $('.article-card-bottom').outerHeight()
             $('.article-image').css({ height: articleHeight })
         }
-        if ($(window).width() > 767) {
+        if ($(window).width() > 768) {
             $('.article-image').css({ height: '100%' })
         }
     }
