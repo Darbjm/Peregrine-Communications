@@ -220,7 +220,6 @@ nav.container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 250px;
 }
 
 .form {
