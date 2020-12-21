@@ -73,7 +73,7 @@ $(document).ready(() => {
     /* Change newsletter input placeholder when submitted */  
     $('button.newsletter-button').click(event => {
         event.preventDefault()
-        // $('input.newsletter-input').attr('placeholder', 'Subscribed')
+        $('input.newsletter-input').attr('placeholder', 'Subscribed')
     })
 
     /* Logo animation on scroll */
