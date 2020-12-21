@@ -820,4 +820,8 @@ section {
   .newsletter-button {
     width: 100%;
   }
+
+  .newsletter-button {
+    font-size: 10px;
+  }
 }
